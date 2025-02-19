@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+ul ul {
+  margin-left: 20px;
+  list-style: circle;
+}
+
+details > ul {
+  background: rgb(223 224 249 / 90%);
+  border-radius: 10px;
+  border: 1px solid indigo;
+}
+
+.background {
+  background-image: url("../../public/settele.png");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+body {
+  --tw-gradient-to: #dcecff var(--tw-gradient-to-position);
+
+  --tw-gradient-from: #ffe1e1 var(--tw-gradient-from-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
